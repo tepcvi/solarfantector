@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanTector - Solar-Powered Mini Fan</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="FanTector - Solar-Powered Mini Fan">
+    <meta name="description" content="Experience the cool breeze with our eco-friendly, solar-powered mini fan with smart PIR sensor technology.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/tepcvi/solarfantector">
+    <meta property="og:title" content="FanTector - Solar-Powered Mini Fan">
+    <meta property="og:description" content="Experience the cool breeze with our eco-friendly, solar-powered mini fan with smart PIR sensor technology.">
+    <meta property="og:image" content="https://github.com/tepcvi/solarfantector/raw/main/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/tepcvi/solarfantector">
+    <meta property="twitter:title" content="FanTector - Solar-Powered Mini Fan">
+    <meta property="twitter:description" content="Experience the cool breeze with our eco-friendly, solar-powered mini fan with smart PIR sensor technology.">
+    <meta property="twitter:image" content="https://github.com/tepcvi/solarfantector/raw/main/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body id="top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid px-0">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold ms-3" href="#top" id="logo-link">
+                    <div class="logo-container" style="position: relative; display: inline-block;">
+                        <img src="logo.png" alt="FanTector Logo" height="45" style="filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.8)); border: 1px solid rgba(0, 229, 255, 0.3); border-radius: 8px; padding: 2px; background: rgba(10, 14, 23, 0.5);">
+                        <div class="logo-glow" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(0, 229, 255, 0.3) 0%, transparent 70%); mix-blend-mode: screen; pointer-events: none;"></div>
+                    </div>
+                    <span class="ms-2" style="text-shadow: 0 0 15px rgba(0, 229, 255, 0.7); letter-spacing: 2px; font-size: 1.5rem; font-weight: 800; font-family: 'Orbitron', sans-serif;">FAN<span style="color: var(--primary);">TECTOR</span></span>
+                </a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <!-- Navigation links for all users -->
+                <a class="nav-link" href="#features">
+                    <span style="font-size: 1.1rem;">⭐</span> Features
+                </a>
+                <a class="nav-link" href="#team">
+                    <span style="font-size: 1.1rem;">👨‍💻</span> Our Team
+                </a>
+                <a class="nav-link" href="#faq">
+                    <span style="font-size: 1.1rem;">❓</span> FAQ
+                </a>
+                <a class="nav-link" href="#installation">
+                    <span style="font-size: 1.1rem;">💻</span> Setup
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-background" style="background-image: url('tector.jpg');">
+                        <div class="container text-center">
+                            <h1 class="display-4 fw-bold mb-4 text-white">
+                                <span style="font-size: 3rem;">🌪️</span><br>
+                                <span style="font-family: 'Orbitron', sans-serif;">FAN<span style="color: var(--primary);">TECTOR</span></span>
+                            </h1>
+                            <p class="lead mb-4 text-white">Experience the cool breeze with our eco-friendly, solar-powered mini fan</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#features" class="btn btn-outline-light btn-lg px-4 py-2 fw-bold">
+                                    <span style="font-size: 1.2rem;">🔍</span> Learn More
+                                </a>
+                                <a href="#shop" class="btn btn-light btn-lg px-4 py-2 fw-bold">
+                                    <span style="font-size: 1.2rem;">💳</span> Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="carousel-background" style="background-image: url('tector.jpg');">
+                        <div class="container text-center">
+                            <h1 class="display-4 fw-bold mb-4 text-white">
+                                <span style="font-size: 3rem;">☀️</span><br>
+                                Solar-Powered Efficiency
+                            </h1>
+                            <p class="lead mb-4 text-white">Harness the power of the sun with our innovative solar panel technology</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#features" class="btn btn-outline-light btn-lg px-4 py-2 fw-bold">
+                                    <span style="font-size: 1.2rem;">🔍</span> Explore Features
+                                </a>
+                                <a href="#shop" class="btn btn-light btn-lg px-4 py-2 fw-bold">
+                                    <span style="font-size: 1.2rem;">💳</span> Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="carousel-background" style="background-image: url('tector.jpg');">
+                        <div class="container text-center">
+                            <h1 class="display-4 fw-bold mb-4 text-white">
+                                <span style="font-size: 3rem;">💡</span><br>
+                                Smart PIR Sensor Technology
+                            </h1>
+                            <p class="lead mb-4 text-white">Motion detection technology that activates the fan only when you need it</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#installation" class="btn btn-outline-light btn-lg px-4 py-2 fw-bold">
+                                    <span style="font-size: 1.2rem;">💻</span> Setup Guide
+                                </a>
+                                <a href="#shop" class="btn btn-light btn-lg px-4 py-2 fw-bold">
+                                    <span style="font-size: 1.2rem;">💳</span> Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <main>
+
+        <!-- Features Section -->
+        <section id="features" class="py-5 bg-pattern">
+            <div class="container">
+                <div class="section-title-container text-center">
+                    <h2 class="text-center">KEY FEATURES</h2>
+                    <p class="text-muted">Discover what makes our Mini Solar Fan special</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <span style="font-size: 3rem;">☀️</span>
+                                </div>
+                                <h5 class="card-title">Solar-Powered Efficiency</h5>
+                                <p class="card-text">Harnesses solar energy for continuous operation, reducing your carbon footprint and electricity bills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <span style="font-size: 3rem;">💡</span>
+                                </div>
+                                <h5 class="card-title">Smart PIR Sensor</h5>
+                                <p class="card-text">Automatically detects presence and activates the fan, ensuring cooling only when needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <span style="font-size: 3rem;">💨</span>
+                                </div>
+                                <h5 class="card-title">Arduino-Controlled</h5>
+                                <p class="card-text">Reliable Arduino control ensures optimal performance and customizable settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="team" class="py-5 bg-pattern">
+            <div class="container">
+                <div class="section-title-container text-center">
+                    <h2 class="text-center">OUR TEAM</h2>
+                    <p class="text-muted">The talented developers behind Timon and Friends</p>
+                    <!-- Note: Add your team member photos in the images/team/ directory with filenames: hacker.jpg, hipster.jpg, and hustler.jpg -->
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card team-member-card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <img src="BEL.jpg" alt="Team Member - Hacker" class="team-member-img" onerror="this.src='https://via.placeholder.com/150x150.png?text=Hacker'; this.onerror='';">
+                                <h5 class="card-title" style="color: var(--white);">Derick Loyd Belgira</h5>
+                                <span class="team-member-role role-hustler-hacker" style="background: linear-gradient(to right, rgba(255, 61, 113, 0.1), rgba(0, 229, 255, 0.1)); border-color: rgba(255, 61, 113, 0.3); color: var(--primary);">HUSTLER / HACKER</span>
+                                <p class="card-text">Problem-solver and driven leader who loves to build, optimize, and execute, turning innovative ideas into reality while finding technical solutions.</p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card team-member-card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <img src="MON.jpg" alt="Team Member - Hipster" class="team-member-img" onerror="this.src='https://via.placeholder.com/150x150.png?text=Hipster'; this.onerror='';">
+                                <h5 class="card-title" style="color: var(--white);">Jancyril Timon</h5>
+                                <span class="team-member-role role-hipster">HIPSTER</span>
+                                <p class="card-text">Creative thinker with an eye for design and user experience, making our products beautiful and intuitive.</p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card team-member-card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <img src="TEP.jpg" alt="Team Member - Hustler" class="team-member-img" onerror="this.src='https://via.placeholder.com/150x150.png?text=Hustler'; this.onerror='';">
+                                <h5 class="card-title" style="color: var(--white);">Stephen Dave Piquero</h5>
+                                <span class="team-member-role role-hacker">HACKER</span>
+                                <p class="card-text">Technical problem-solver who loves to build and optimize, always finding innovative solutions for our engineering challenges.</p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Specifications -->
+                <div class="row mt-5 g-4">
+                    <div class="col-12 mb-4">
+                        <h4 class="text-center" style="color: var(--white); font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">PRODUCT INFORMATION</h4>
+                        <div class="d-flex justify-content-center">
+                            <div class="divider" style="width: 80px; height: 3px; background: linear-gradient(to right, var(--primary), var(--secondary)); border-radius: 3px; box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100 product-spec-card" style="border-left: 4px solid var(--primary); border-radius: 0 10px 10px 0; background: rgba(10, 14, 23, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: var(--glass-shadow);">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-4" style="color: var(--primary); border-bottom: 2px solid rgba(0, 229, 255, 0.3); padding-bottom: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">
+                                    <span style="font-size: 1.5rem; color: var(--primary); margin-right: 10px; text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);">💡</span>
+                                    <span style="font-weight: 700;">TECHNICAL SPECIFICATIONS</span>
+                                </h5>
+                                <div class="specs-list">
+                                    <div class="spec-row d-flex align-items-center mb-3 pb-2" style="border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                                        <span class="spec-icon me-3" style="color: var(--primary);">✅</span>
+                                        <span class="spec-label fw-bold" style="width: 140px; color: var(--white);">Solar Panel:</span>
+                                        <span class="spec-value" style="color: rgba(255,255,255,0.8);">5V 1W Polycrystalline</span>
+                                    </div>
+                                    <div class="spec-row d-flex align-items-center mb-3 pb-2" style="border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                                        <span class="spec-icon me-3" style="color: var(--primary);">✅</span>
+                                        <span class="spec-label fw-bold" style="width: 140px; color: var(--white);">Battery:</span>
+                                        <span class="spec-value" style="color: rgba(255,255,255,0.8);">3.7V 2000mAh Li-ion</span>
+                                    </div>
+                                    <div class="spec-row d-flex align-items-center mb-3 pb-2" style="border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                                        <span class="spec-icon me-3" style="color: var(--primary);">✅</span>
+                                        <span class="spec-label fw-bold" style="width: 140px; color: var(--white);">PIR Range:</span>
+                                        <span class="spec-value" style="color: rgba(255,255,255,0.8);">Up to 5 meters</span>
+                                    </div>
+                                    <div class="spec-row d-flex align-items-center">
+                                        <span class="spec-icon me-3" style="color: var(--primary);">✅</span>
+                                        <span class="spec-label fw-bold" style="width: 140px; color: var(--white);">Controller:</span>
+                                        <span class="spec-value" style="color: rgba(255,255,255,0.8);">Arduino Uno</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100 product-env-card" style="border-left: 4px solid var(--secondary); border-radius: 0 10px 10px 0; background: rgba(10, 14, 23, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: var(--glass-shadow);">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-4" style="color: var(--secondary-light); border-bottom: 2px solid rgba(123, 31, 162, 0.3); padding-bottom: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">
+                                    <span style="font-size: 1.5rem; color: var(--secondary-light); margin-right: 10px; text-shadow: 0 0 10px rgba(123, 31, 162, 0.5);">🌱</span>
+                                    <span style="font-weight: 700;">ENVIRONMENTAL BENEFITS</span>
+                                </h5>
+                                <div class="benefits-list">
+                                    <div class="benefit-row d-flex align-items-center mb-3 pb-2" style="border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                                        <span class="benefit-icon me-3" style="color: var(--primary); width: 24px; text-align: center; text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);">🌍</span>
+                                        <span class="benefit-text" style="color: rgba(255,255,255,0.8);">Reduces Carbon Footprint</span>
+                                    </div>
+                                    <div class="benefit-row d-flex align-items-center mb-3 pb-2" style="border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                                        <span class="benefit-icon me-3" style="color: var(--secondary-light); width: 24px; text-align: center; text-shadow: 0 0 5px rgba(123, 31, 162, 0.5);">💡</span>
+                                        <span class="benefit-text" style="color: rgba(255,255,255,0.8);">Energy Efficient Design</span>
+                                    </div>
+                                    <div class="benefit-row d-flex align-items-center mb-3 pb-2" style="border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                                        <span class="benefit-icon me-3" style="color: var(--accent); width: 24px; text-align: center; text-shadow: 0 0 5px rgba(255, 61, 113, 0.5);">♻️</span>
+                                        <span class="benefit-text" style="color: rgba(255,255,255,0.8);">Recyclable Materials</span>
+                                    </div>
+                                    <div class="benefit-row d-flex align-items-center mb-3 pb-2" style="border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                                        <span class="benefit-icon me-3" style="color: var(--primary-light); width: 24px; text-align: center; text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);">💨</span>
+                                        <span class="benefit-text" style="color: rgba(255,255,255,0.8);">Low Noise Operation</span>
+                                    </div>
+                                    <div class="benefit-row d-flex align-items-center">
+                                        <span class="benefit-icon me-3" style="color: var(--secondary); width: 24px; text-align: center; text-shadow: 0 0 5px rgba(123, 31, 162, 0.5);">🔥</span>
+                                        <span class="benefit-text" style="color: rgba(255,255,255,0.8);">Reduces Heat Emissions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-5 bg-pattern">
+            <div class="container">
+                <div class="section-title-container text-center">
+                    <h2 class="text-center">FREQUENTLY ASKED QUESTIONS</h2>
+                    <p class="text-muted">Everything you need to know about our Mini Solar Fan</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How does the solar charging work?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The Solar Mini Fan features an integrated solar panel that charges an internal battery during daylight hours. This stored energy powers the fan, even when direct sunlight isn't available.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What is a PIR sensor and how does it function?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        PIR stands for Passive Infrared. The sensor detects motion by sensing changes in infrared radiation (body heat). When it detects a person, it automatically activates the fan, providing cooling only when needed to save energy.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Is the fan suitable for outdoor use?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        While designed for efficiency, the fan is primarily intended for shaded outdoor areas or indoor use where it can still receive indirect sunlight for charging. It is not fully waterproof, so avoid direct exposure to heavy rain.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        How long does the battery last on a full charge?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        On a full charge, the fan can operate for approximately 6-8 hours, depending on the fan speed setting and frequency of PIR sensor activation. Continuous solar exposure extends this runtime significantly.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="installation" class="py-5 bg-pattern">
+            <div class="container">
+                <div class="section-title-container text-center">
+                    <h2 class="text-center">EASY SETUP GUIDE</h2>
+                    <p class="text-muted">Get your Mini Solar Fan up and running in minutes</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card border-0 shadow-sm" style="background: rgba(10, 14, 23, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: var(--glass-shadow); border: 1px solid var(--glass-border);">
+                            <div class="card-body p-5">
+                                <div class="installation-steps">
+                                    <div class="row">
+                                        <!-- Step 1 -->
+                                        <div class="col-md-4 mb-4">
+                                            <div class="text-center mb-3">
+                                                <div class="step-number mx-auto d-inline-block me-2">1</div>
+                                                <h5 class="d-inline-block" style="color: var(--primary); text-shadow: 0 0 5px rgba(0, 229, 255, 0.3);">Position for Sunlight</h5>
+                                            </div>
+                                            <p style="color: rgba(255,255,255,0.8);">Place the fan in a location with direct sunlight exposure for optimal charging and operation.</p>
+                                            <div class="mt-3 d-flex align-items-center">
+                                                <span class="badge bg-warning text-dark me-2">Tip</span>
+                                                <small class="text-muted">South-facing windows work best.</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Step 2 -->
+                                        <div class="col-md-4 mb-4">
+                                            <div class="text-center mb-3">
+                                                <div class="step-number mx-auto d-inline-block me-2">2</div>
+                                                <h5 class="d-inline-block" style="color: var(--primary); text-shadow: 0 0 5px rgba(0, 229, 255, 0.3);">Activate PIR Sensor</h5>
+                                            </div>
+                                            <p style="color: rgba(255,255,255,0.8);">Ensure the PIR sensor is facing the area where motion detection is desired (range: 5m, angle: 120°).</p>
+                                            <div class="mt-3 d-flex align-items-center">
+                                                <span class="badge bg-warning text-dark me-2">Note</span>
+                                                <small class="text-muted">Avoid heat sources.</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Step 3 -->
+                                        <div class="col-md-4 mb-4">
+                                            <div class="text-center mb-3">
+                                                <div class="step-number mx-auto d-inline-block me-2">3</div>
+                                                <h5 class="d-inline-block" style="color: var(--primary); text-shadow: 0 0 5px rgba(0, 229, 255, 0.3);">Power On</h5>
+                                            </div>
+                                            <p style="color: rgba(255,255,255,0.8);">Flip the power switch to activate the fan. It will automatically start when motion is detected.</p>
+                                            <div class="mt-3 text-center">
+                                                <a href="#" class="btn btn-sm btn-primary">Download Full Manual</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="shop" class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">
+                        <div class="logo-container" style="position: relative; display: inline-block;">
+                            <img src="logo.png" alt="FanTector Logo" height="35" style="filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.8)); border: 1px solid rgba(0, 229, 255, 0.3); border-radius: 8px; padding: 2px; background: rgba(10, 14, 23, 0.5);">
+                            <div class="logo-glow" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(0, 229, 255, 0.3) 0%, transparent 70%); mix-blend-mode: screen; pointer-events: none;"></div>
+                        </div>
+                        <span class="ms-2" style="text-shadow: 0 0 15px rgba(0, 229, 255, 0.7); letter-spacing: 2px; font-size: 1.3rem; font-weight: 800; font-family: 'Orbitron', sans-serif;">FAN<span style="color: var(--primary);">TECTOR</span></span>
+                    </h5>
+                    <p class="text-muted mb-3">Innovative solar-powered solutions for a sustainable future.</p>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="d-flex align-items-center">
+                            <span style="font-size: 1.1rem; margin-right: 10px;">📍</span>
+                            <small class="text-muted">Cannery site, Polomolok South Cotabato.</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span style="font-size: 1.1rem; margin-right: 10px;">📧</span>
+                            <small class="text-muted">tmonandfriends@gmail.com</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span style="font-size: 1.1rem; margin-right: 10px;">📱</span>
+                            <small class="text-muted">090881814444</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#features" class="text-muted text-decoration-none hover-yellow">Features</a></li>
+                        <li class="mb-2"><a href="#team" class="text-muted text-decoration-none hover-yellow">Our Team</a></li>
+                        <li class="mb-2"><a href="#faq" class="text-muted text-decoration-none hover-yellow">FAQ</a></li>
+                        <li class="mb-2"><a href="#installation" class="text-muted text-decoration-none hover-yellow">Setup Guide</a></li>
+                        <li class="mb-2"><a href="#shop" class="text-muted text-decoration-none hover-yellow">Shop Now</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-white mb-3">Follow Us</h6>
+                    <p class="text-muted mb-3">Stay connected with us on social media</p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            <span style="font-size: 1rem;">📘</span> Facebook
+                        </a>
+                        <a href="#" class="btn btn-outline-danger btn-sm">
+                            <span style="font-size: 1rem;">📷</span> Instagram
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm">
+                            <span style="font-size: 1rem;">🕊️</span> Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: #4a5568;">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2024 Timon and Friends. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Designed with <span style="color: #ff6b6b;">❤</span> by Timon and Friends Team</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <span style="font-size: 1.2rem;">🌪️</span>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
